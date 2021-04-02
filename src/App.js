@@ -2,8 +2,7 @@ import logo from './logo.svg';
 import "./App.scss"
 import React from 'react'
 import { Route, Switch, HashRouter, BrowserRouter } from 'react-router-dom'
-import Home from './views/home'
-import Info from './views/info'
+import Login from './views/login'
 
 class App extends React.Component {
   constructor(props) {
@@ -14,8 +13,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact component={Home} path="/" />
-          <Route component={Info} path="/info" />
+          <Route exact component={Login} path="/" />
         </Switch>
       </BrowserRouter>
     )
